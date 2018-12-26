@@ -35,15 +35,14 @@ scanner.onadvertisement = (ad) => {
 
 // Start scanning
 scanner.startScan().then(() => {
-  // console.log('Started to scan.')  ;
+  console.log('Started to scan.')  ;
 }).catch((error) => {
-  // console.error(error);
+  console.error(error);
 });
 app.get("/", (req, res) =>{
   res.render("home.hbs");
 });
-
-
+//
 app.post("/beacon", (req, res) =>{
   setTimeout(function(){
     if(values.length == 0){
@@ -56,4 +55,6 @@ app.post("/beacon", (req, res) =>{
 },10000);
 });
 
-app.listen(port);
+app.listen(port, () => {
+  console.log(`Serve is up at localhost:${port}`);
+});

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines" : { "node" : ">=8.12.0" } ,
+  "engines": {
+    "node": ">=8.12.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node beac.js"
@@ -13,6 +15,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.1",
+    "lodash": "^4.17.11",
     "node-beacon-scanner": "^0.1.0"
   }
 }

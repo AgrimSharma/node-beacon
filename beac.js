@@ -1,4 +1,3 @@
-const noble = require('noble');
 const express = require('express');
 const hbs = require('hbs');
 const _ = require('lodash');

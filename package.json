@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines" : { "node" : ">=8.12.0" } ,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node beac.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "node-beacon-scanner": "^0.1.0"
+  }
 }

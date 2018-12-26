@@ -42,7 +42,11 @@ scanner.startScan().then(() => {
 app.get("/", (req, res) =>{
   res.render("home.hbs");
 });
-//
+
+app.get("", (req, res) =>{
+  res.render("home.hbs");
+});
+
 app.post("/beacon", (req, res) =>{
   setTimeout(function(){
     if(values.length == 0){
